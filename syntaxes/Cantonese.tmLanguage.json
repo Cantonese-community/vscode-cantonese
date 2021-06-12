@@ -1,0 +1,173 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Cantonese",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#numerics"
+		},
+		{
+			"include": "#operators"
+		},
+		{
+			"include": "#variables"
+		},
+		{
+			"include": "#functions"
+		}
+	],
+	"repository": {
+		"functions": {
+			"patterns": [{
+				"name": "support.function",
+				"match": "(瞓|加\\s*啲|摞\\s*走|嘅\\s*长\\s*度|阵\\s*先|畀\\s*你|散\\s*水)"
+			}]
+		},
+		"variables":{
+			"patterns":[{
+				"name": "makeup.raw",
+				"match": "([a-zA-Z_])"
+			}]
+		},
+		"operators": {
+			"patterns": [
+				{
+					"match": "<<|>>",
+					"name": "keyword.operator.bitwise.shift.c"
+				},
+				{
+					"match": "!=|<=|>=|==|<|>",
+					"name": "keyword.operator.comparison.c"
+				},
+				{
+					"match": "&&|!|\\|\\|",
+					"name": "keyword.operator.logical.c"
+				},
+				{
+					"match": "&|\\||\\^|~",
+					"name": "keyword.operator.c"
+				},
+				{
+					"match": "=",
+					"name": "keyword.operator.assignment.c"
+				},
+				{
+					"match": "%|\\*|/|-|\\+",
+					"name": "keyword.operator.c"
+				},
+				{
+					"name": "markup.bold",
+					"match": "($|,|嘅|减|加|相\\s*加|比\\s*唔\\s*上|乘|整\\s*除|除|余|异\\s*或|取\\s*反|左\\s*移|右\\s*移|与|或)"
+				}
+		]
+		},
+		"numerics": {
+			"patterns": [{
+				"name": "constant.numeric",
+				"match": "([0-9])"
+			}]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"captures": {
+						"1": {
+							"name": "meta.toc-list.banner.block.c"
+						}
+					},
+					"match": "^/\\* =(\\s*.*?)\\s*= \\*/$\\n?",
+					"name": "comment.block.c"
+				},
+				{
+					"begin": "/\\*",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.comment.begin.c"
+						}
+					},
+					"end": "\\*/",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.comment.end.c"
+						}
+					},
+					"name": "comment.block.c"
+				},
+				{
+					"match": "\\*/.*\\n",
+					"name": "invalid.illegal.stray-comment-end.c"
+				},
+				{
+					"captures": {
+						"1": {
+							"name": "meta.toc-list.banner.line.c"
+						}
+					},
+					"match": "^// =(\\s*.*?)\\s*=\\s*$\\n?",
+					"name": "comment.line.banner.cpp"
+				},
+				{
+					"begin": "(^[ \\t]+)?(?=//)",
+					"beginCaptures": {
+						"1": {
+							"name": "punctuation.whitespace.comment.leading.cpp"
+						}
+					},
+					"end": "(?!\\G)",
+					"patterns": [
+						{
+							"begin": "//",
+							"beginCaptures": {
+								"0": {
+									"name": "punctuation.definition.comment.cpp"
+								}
+							},
+							"end": "(?=\\n)",
+							"name": "comment.line.double-slash.cpp",
+							"patterns": [
+								{
+									"include": "#line_continuation_character"
+								}
+							]
+						}
+					]
+				}
+			]
+        },
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.Cantonese",
+				"match": "(畀\\s*我\\s*睇\\s*下|点\\s*样\\s*先|收\\s*工|喺|定|老\\s*作\\s*一\\s*下|起\\s*底|讲\\s*嘢|咩\\s*系|唔\\s*系|系|如\\s*果|嘅\\s*话|同\\s*埋|咩\\s*都\\s*唔\\s*做|落\\s*操\\s*场\\s*玩\\s*跑\\s*步|用\\s*下|使\\s*下|要\\s*做\\s*咩|搞\\s*掂|就|谂\\s*下|佢\\s*嘅|玩\\s*到|为\\s*止|返\\s*转\\s*头|执\\s*嘢|揾\\s*到|执\\s*手\\s*尾|掟\\s*个|来\\s*睇\\s*下)"
+			},
+			{
+				"name": "keyword.control.Cantonese2",
+				"match": "(从|行\\s*到|行\\s*晒|佢\\s*个\\s*老\\s*豆\\s*叫|佢\\s*识\\s*得|明\\s*白\\s*未\\s*啊|落Order|饮\\s*茶\\s*先\\s*啦|拍\\s*住\\s*上|係|比\\s*唔\\s*上|或\\s*者|辛\\s*苦\\s*晒\\s*啦|同\\s*我\\s*躝|唔\\s*啱|啱|冇|有\\s*条\\s*仆\\s*街\\s*叫|顶\\s*你|丢\\s*你|嗌|过\\s*嚟\\s*估\\s*下|佢\\s*有\\s*啲\\s*咩|自\\s*己\\s*嘅|下)"
+			},
+			{
+				"name": "keyword.control.Cantonese.terminator",
+				"match": "(!|:|$|@)"
+			}
+		]
+		},
+		"strings": {
+			"name": "string.quoted.double.Cantonese",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.Cantonese",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.Cantonese"
+}

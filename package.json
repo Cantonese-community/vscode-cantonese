@@ -1,0 +1,27 @@
+{
+    "name": "Cantonese",
+    "displayName": "Cantonese",
+    "description": "VS Code syntax highlight for Cantonese",
+    "version": "0.0.1",
+    "publisher": "Cantonese-community",
+    "repository": "https://github.com/Cantonese-community/vscode-cantonese",
+    "engines": {
+        "vscode": "^1.42.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "Cantonese",
+            "aliases": ["Cantonese", "Cantonese"],
+            "extensions": [".Cantonese"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "Cantonese",
+            "scopeName": "source.Cantonese",
+            "path": "./syntaxes/Cantonese.tmLanguage.json"
+        }]
+    }
+}
