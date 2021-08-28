@@ -168,5 +168,13 @@
             "佢嘅 ${1} 係 ${2}"
         ],
         "description": "Attr statement"
+    },
+
+    "Return Statement": {
+        "prefix": "return",
+        "body": [
+            "还数 ${1}"
+        ],
+        "description": "Return statement"
     }
 }
