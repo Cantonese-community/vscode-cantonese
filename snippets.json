@@ -1,0 +1,172 @@
+{
+    "Print Statement": {
+        "prefix": "print",
+        "body": [
+            "畀我睇下 ${1} 点样先?"
+        ],
+        "description": "print statement"
+    },
+
+    "Exit Statement": {
+        "prefix": "exit",
+        "body": [
+            "收工"
+        ],
+        "description": "exit statement"
+    },
+
+    "Assign Statement": {
+        "prefix": "assign",
+        "body": [
+            "讲嘢: ${1} 係 ${2}"
+        ],
+        "description": "assign statement"
+    },
+
+    "While Statement": {
+        "prefix": "while",
+        "body": [
+            "落操场玩跑步",
+            "   ${1}",
+            "玩到 ${2} 为止"
+        ],
+        "description": "while statement"
+    },
+
+    "If Statement": {
+        "prefix": "if",
+        "body": [
+            "如果 ${1} 嘅话 -> {",
+            "   ${2}",
+            "{"
+        ],
+        "description": "if statement"
+    },
+
+    "Break Statement": {
+        "prefix": "break",
+        "body": [
+            "饮茶先啦"
+        ],
+        "description": "break statement"
+    },
+
+    "Try Statement": {
+        "prefix": "try",
+        "body": [
+            "执嘢 -> {",
+            "   ${1}",
+            "}"
+        ],
+        "description": "try statement"
+    },
+
+    "Except Statement": {
+        "prefix": "except",
+        "body": [
+            "揾到 ${1} 嘅话",
+            "   ${1}",
+            "}"
+        ],
+        "description": "except statement"
+    },
+
+    "Finally Statement": {
+        "prefix": "finally",
+        "body": [
+            "执手尾 -> {",
+            "   ${1}",
+            "}"
+        ],
+        "description": "finally statement"
+    },
+
+    "Raise Statement": {
+        "prefix": "raise",
+        "body": [
+            "掟个 ${1} 来睇下?"
+        ],
+        "description": "raise statement"
+    },
+
+    "Type Statement": {
+        "prefix": "type",
+        "body": [
+            "起底: ${1}"
+        ],
+        "description": "type statement"
+    },
+
+    "Import Statement": {
+        "prefix": "import",
+        "body": [
+            "使下 ${1}"
+        ],
+        "description": "import statement"
+    },
+
+    "For Statement": {
+        "prefix": "for",
+        "body": [
+            "${1} 从 ${2} 行到 ${3}",
+            "   ${4}",
+            "行晒"
+        ],
+        "description": "For statement"
+    },
+
+    "Function Statement": {
+        "prefix": "def",
+        "body": [
+            "$ ${1} 要做咩:",
+            "   ${2}",
+            "搞掂"
+        ],
+        "description": "Function statement"
+    },
+
+    "Call_bfunc Statement": {
+        "prefix": "bcall",
+        "body": [
+            "用下 ${1}"
+        ],
+        "description": "Call the built-in function"
+    },
+
+    "Call_func Statement": {
+        "prefix": "call",
+        "body": [
+            "|${1}| 下 -> ${2}"
+        ],
+        "description": "Call Statement"
+    },
+
+    "Class Statement": {
+        "prefix": "class",
+        "body": [
+           "咩系 ${1}?",
+           "    佢个老豆叫 |${2}|",
+           "    ${3}",
+           "明白未啊?"
+        ],
+        "description": "Class statement"
+    },
+
+    "Method Statement": {
+        "prefix": "method",
+        "body": [
+           "佢识得 ${1} -> {",
+           "    ${1}",
+           "}"
+        ],
+        "description": "Method statement"
+    },
+
+    "Attr Statement": {
+        "prefix": "attr",
+        "body": [
+            "佢嘅 ${1} 係 ${2}"
+        ],
+        "description": "Attr statement"
+    }
+}

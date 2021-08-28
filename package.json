@@ -22,6 +22,11 @@
             "language": "Cantonese",
             "scopeName": "source.Cantonese",
             "path": "./syntaxes/Cantonese.tmLanguage.json"
-        }]
+        }],
+        "snippets": [
+			{
+				"language": "Cantonese",
+				"path": "./snippets.json"
+			}]
     }
 }
