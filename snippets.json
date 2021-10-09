@@ -176,5 +176,25 @@
             "还数 ${1}"
         ],
         "description": "Return statement"
+    },
+
+    "Web Style define": {
+        "prefix": "WebStyle",
+        "body": [
+            "${1} 要点画",
+            "    ${1}",
+            "搞掂"
+        ],
+        "description": "Web Style define"
+    },
+
+    "Web html deine": {
+        "prefix": "Webhtml",
+        "body": [
+            "老作一下 {",
+            "${1}",
+            "}"
+        ],
+        "description": "Web Html define"
     }
 }
