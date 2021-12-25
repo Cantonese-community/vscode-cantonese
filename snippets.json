@@ -23,6 +23,22 @@
         "description": "assign statement"
     },
 
+    "Multi-Assign Statement": {
+        "prefix": "multi-assign",
+        "body": [
+            "讲嘢 -> {",
+            "   ${1} 係 ${2}",
+            "}"
+        ]
+    },
+
+    "Global Statement": {
+        "prefix": "global",
+        "body": [
+            "Share下 ${1}"
+        ]
+    },
+
     "While Statement": {
         "prefix": "while",
         "body": [
@@ -176,6 +192,63 @@
             "还数 ${1}"
         ],
         "description": "Return statement"
+    },
+
+
+    "Random Library": {
+        "prefix": "random",
+        "body": [
+            "随机数"
+        ],
+        "description": "random library"
+    },
+
+    "Game Library": {
+        "prefix": "game-lib",
+        "body": [
+            "游戏"
+        ],
+        "description": "game library"
+    },
+
+    "Game setmode": {
+        "prefix": "game-set-mode",
+        "body": [
+            "屏幕老作"
+        ],
+        "description": "game set mode"
+    },
+
+    "Game imgload": {
+        "prefix": "game-img-load",
+        "body": [
+            "图片老作"
+        ],
+        "description": "Game imgload"
+    },
+
+    "Game rectload": {
+        "prefix": "game-rect-load",
+        "body": [
+            "矩形老作"
+        ],
+        "description": "Game rectload"
+    },
+
+    "Game Rect": {
+        "prefix": "game-rect",
+        "body": [
+            "嚟个矩形"
+        ],
+        "description": "Game Rect"
+    },
+
+    "Game musicload": {
+        "prefix": "game-music-load",
+        "body": [
+            "嚟首music"
+        ],
+        "description": "Game music load"
     },
 
     "Web Style define": {
