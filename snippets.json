@@ -194,6 +194,14 @@
         "description": "Return statement"
     },
 
+    "Keyword In" : {
+        "prefix" : "in",
+        "body" : [
+            " 喺 "
+        ],
+        "description": "Keyword in"
+    },
+
 
     "Random Library": {
         "prefix": "random",
@@ -243,6 +251,14 @@
         "description": "Game Rect"
     },
 
+    "Game Text": {
+        "prefix": "game-text",
+        "body": [
+            "写隻字"
+        ],
+        "description": "Game Text"
+    },
+
     "Game musicload": {
         "prefix": "game-music-load",
         "body": [
@@ -269,5 +285,37 @@
             "}"
         ],
         "description": "Web Html define"
+    },
+
+    "Where" : {
+        "prefix" : "Where",
+        "body" :[
+            "身位(${1})"
+        ],
+        "description": "Where statement"
+    },
+
+    "Request": {
+        "prefix" : "Request",
+        "body" : [
+            "网络请求"
+        ],
+        "description": "The library of Web Request"
+    },
+
+    "Json" : {
+        "prefix" : "json_parse",
+        "body" : [
+            "json解析"
+        ],
+        "description": "The library of Json Parser"
+    },
+
+    "Web Request" : {
+        "prefix" : "Web Request",
+        "body" : [
+            "|𠯠求| 下 -> ||"
+        ],
+        "description": "The function of web request"
     }
 }
