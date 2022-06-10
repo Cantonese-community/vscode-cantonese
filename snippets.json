@@ -54,7 +54,7 @@
         "body": [
             "如果 ${1} 嘅话 -> {",
             "   ${2}",
-            "{"
+            "}"
         ],
         "description": "if statement"
     },
@@ -317,5 +317,30 @@
             "|𠯠求| 下 -> ||"
         ],
         "description": "The function of web request"
+    },
+
+    "True" : {
+        "prefix" : "True",
+        "body" : [
+            "啱"
+        ],
+        "description": "True in Cantonese"
+    },
+
+    "False" : {
+        "prefix" : "False",
+        "body" : [
+            "唔啱"
+        ],
+        "description": "False in Cantonese"
+    },
+
+    "Input" : {
+        "prefix" : "Input",
+        "body" : [
+            "&畀你()"
+        ],
+        "description": "The input function"
     }
+
 }
