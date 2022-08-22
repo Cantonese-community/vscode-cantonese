@@ -4,9 +4,7 @@
 # 功能
 * 支持语法高亮
 * 代码自动补全
-
-# TODO
-* 使用快捷键运行Cantonese代码
+* 鼠标右键点击`Run Cantonese code` 运行代码
 
 ## 使用方法
 
