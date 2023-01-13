@@ -15,6 +15,14 @@
         "description": "exit statement"
     },
 
+    "Self Statement": {
+        "prefix": "self",
+        "body": [
+            "自己嘅"
+        ],
+        "description": "self statement"
+    },
+
     "Assign Statement": {
         "prefix": "assign",
         "body": [
